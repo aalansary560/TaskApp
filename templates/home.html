@@ -1,0 +1,20 @@
+<h1>Home</h1>
+
+<form action="/users/logout/" method="POST">
+    {% csrf_token %}
+    <button>LOG OUT</button>
+</form>
+
+<form action="/tasks/addTask/" method="POST">
+    {% csrf_token %}
+    <button>NEW TASK</button>
+</form>
+
+<h2>Your Tasks</h2>
+<ul>
+    {% for task in tasks %}
+        <li>{{task.name}}</li>
+    {% empty %}
+        <h3>No Tasks Yet</h3>
+    {% endfor %}
+</ul>
