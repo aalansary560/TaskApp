@@ -1,0 +1,108 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    font-family: calibri;
+}
+
+#home
+{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .buttons
+{
+    display: flex;
+    padding: 30px;
+    gap: 40px;
+}
+
+.buttons .button
+{
+    border: 0;
+    background-color: orange;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.button a
+{
+    text-decoration: none;
+    font-size: 25px;
+    color: azure;
+    font-weight: bold;
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.button:hover
+{
+    background-color: black;
+}
+
+
+.button a:hover
+{
+    color: orange;
+}
+
+#login
+{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login p 
+{
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#login input[type="text"],
+#login input[type="password"] 
+{
+    width: 100%;             
+    padding: 8px;          
+    margin: 10px 10px;        
+    border: 2px solid orange;  
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#login input[type="text"]:focus,
+#login input[type="password"]:focus 
+{
+    border-color: orange;
+    box-shadow: 0 0 5px orange;
+}
+
+#login input[type="text"]:hover,
+#login input[type="password"]:hover 
+{
+    border-color: orange;
+    box-shadow: 0 0 5px orange;
+}
+
+#login img
+{
+    margin-bottom: 20px;
+}
+
+#login .button a
+{
+    font-size: 17px;
+}

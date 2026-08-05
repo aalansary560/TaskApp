@@ -1,4 +1,22 @@
-<h1>Welcome to TASK</h1>
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>TASK</title>
+</head>
+<body>
 
-<button><a href="/users/login/">LOG IN</a></button>
-<button><a href="/users/signin/">SIGN IN</a></button>
+    <div id="home">
+        <img src="{% static 'img/TASK_LOGO.png' %}" alt="logo" width="400">
+        <div class="buttons">
+            <button class="button" title="I have an account"><a href="/users/login/">LOG IN</a></button>
+            <button class="button" title="New user"><a href="/users/signin/">SIGN IN</a></button>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

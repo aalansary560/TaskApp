@@ -1,8 +1,27 @@
-<h1>login</h1>
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>LOG IN</title>
+</head>
+<body>
+    <form action="/users/login/" method="POST">
+        {% csrf_token %}
+        
+        <div id="login" class="buttons">
+            <img src="{% static 'img/TASK_LOGO.png' %}" alt="logo" width="400">
+            <br>
+            {{form}}
+            <br>
+            <button class="button"><a href="#">LOG IN</a></button>
+        </div>
+        
+    </form>
+</body>
+</html>
 
-<form action="/users/login/" method="POST">
-    {% csrf_token %}
-    {{form}}
-    <br>
-    <button>Enter</button>
-</form>
+
+
