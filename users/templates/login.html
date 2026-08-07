@@ -8,18 +8,18 @@
     <title>LOG IN</title>
 </head>
 <body>
+
     <form action="/users/login/" method="POST">
         {% csrf_token %}
-        
         <div id="login" class="buttons">
-            <img src="{% static 'img/TASK_LOGO.png' %}" alt="logo" width="400">
+            <img src="{% static 'img/TASK_LOGO.png' %}" alt="logo" width="350">
             <br>
             {{form}}
             <br>
-            <button class="button"><a href="#">LOG IN</a></button>
+            <button class="button"><span>LOG IN</span></button>
         </div>
-        
     </form>
+
 </body>
 </html>
 

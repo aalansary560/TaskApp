@@ -7,6 +7,11 @@ body
     font-family: calibri;
 }
 
+#home img
+{
+    margin-bottom: 30px;
+}
+
 #home
 {
     height: 80vh;
@@ -28,17 +33,17 @@ body
     border: 0;
     background-color: orange;
     border-radius: 20px;
-    overflow: hidden;
 }
 
-.button a
+.button a,
+.button span
 {
     text-decoration: none;
     font-size: 25px;
     color: azure;
     font-weight: bold;
     display: block;
-    padding: 10px 10px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -47,62 +52,106 @@ body
     background-color: black;
 }
 
-
-.button a:hover
+.button a:hover,
+.button span:hover
 {
     color: orange;
 }
 
-#login
+#login,
+#signin
 {
-    height: 80vh;
+    min-height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 40px 0;
 }
 
-#login p 
+p,
+#signin div,
+#login div
 {
     display: flex;
-    flex-direction: column; 
-    text-align: left;
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+    margin: 6px auto;
+    font-size: 15px;
     font-weight: bold;
-    color: whitesmoke;
+    color: #333;
+    text-align: left;
 }
 
-#login input[type="text"],
-#login input[type="password"] 
+p span:not(.errorlist span),
+.helptext,
+small
 {
-    width: 100%;             
-    padding: 8px;          
-    margin: 10px 10px;        
-    border: 2px solid orange;  
-    border-radius: 8px;
+    display: none !important;
+}
+
+input[type="text"],
+input[type="password"]
+{
+    width: 100%;
+    padding: 8px 12px;
+    margin: 4px 0;
+    border: 2px solid orange;
+    border-radius: 10px;
     box-sizing: border-box;
     outline: none;
+    background-color: #fff;
+    font-size: 14px;
 }
 
-#login input[type="text"]:focus,
-#login input[type="password"]:focus 
+input[type="text"]:focus,
+input[type="password"]:focus
 {
     border-color: orange;
-    box-shadow: 0 0 5px orange;
+    box-shadow: 0 0 8px orange;
 }
 
-#login input[type="text"]:hover,
-#login input[type="password"]:hover 
+input[type="text"]:hover,
+input[type="password"]:hover
 {
     border-color: orange;
-    box-shadow: 0 0 5px orange;
+    box-shadow: 0 0 8px orange;
+}
+
+ul.errorlist
+{
+    color: #ff3333;
+    font-size: 13px;
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0 0;
+    text-align: left;
+    font-weight: normal;
+}
+
+ul.errorlist li
+{
+    margin-bottom: 3px;
+}
+
+#login .button span,
+#signin .button span
+{
+    font-size: 20px;
 }
 
 #login img
 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    width: 250px;
 }
 
-#login .button a
+
+#signin img
 {
-    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 250px;
 }
